@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+body header {
+  margin-top: 2.5rem;
+  margin-left: 4.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  body header {
+    margin-top: 1.25rem;
+    margin-left: 1.5rem;
+  }
+}
+
+body header h4 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.08em;
+  font-size: 1.5rem;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+body section {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  body section {
+    height: auto;
+  }
+}
+
+body section .display {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 7.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  body section .display {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 3.75rem;
+    margin-top: 6.25rem;
+  }
+}
+
+body section .display .content__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+body section .display .content__text h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 95px;
+  color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+  body section .display .content__text h2 {
+    font-size: 2.5rem;
+    line-height: 71px;
+  }
+}
+
+body section .display .content__text p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  max-width: 385px;
+  color: #4F4F4F;
+  margin-top: 2.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  body section .display .content__text p {
+    margin-top: 2rem;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+body section .display .content__text button {
+  font-family: 'Space Mono', monospace;
+  font-size: .875rem;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #333333;
+  padding: 1.5rem 2.5rem;
+  margin-top: 4rem;
+  border: none;
+  color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  body section .display .content__text button {
+    margin-top: 3.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body footer {
+    margin-top: 7rem;
+  }
+}
+
+body footer p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #BDBDBD;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  body footer p {
+    margin-top: 7rem;
+  }
+}
+
+body footer p a {
+  color: #BDBDBD;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
